@@ -1,0 +1,27 @@
+{
+  "name": "type-challenges",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnuhc/type-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnuhc/type-challenges/issues"
+  },
+  "homepage": "https://github.com/gnuhc/type-challenges#readme",
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
