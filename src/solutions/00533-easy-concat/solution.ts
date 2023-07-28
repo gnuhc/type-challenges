@@ -20,6 +20,16 @@
 
 type Concat<T, U> = T extends readonly any[] ? U extends readonly any[] ? [...T, ...U] : never : never
 
+/*
+ * Alternative Solution: 
+ * 
+ * type Concat<T extends readonly unknown[], U extends readonly unknown[]> = [...T,...U]
+ * 
+ * However, this solution is not as robust as the one above since the below code will equal `any[]` when it should be `never`:
+ * 
+ * type error = Concat<null, undefined>
+ */
+
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
 
